@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Интернет-магазин функционального питания для котов «Кэт энерджи»">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">Открыть меню</button>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a>Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Форма выбора программы интернет-магазина «Кэт энерджи»</h1>
+
+      <section class="application-form">
+        <h2 class="application-form__title">Подбор программы</h2>
+        <p class="application-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="application-form__pet pet">
+            <p class="pet__name">
+              <label for="cat-name">Имя:*</label>
+              <input id="cat-name" type="text" name="name" placeholder="Барсик">
+            </p>
+            <p class="pet__weight">
+              <label for="cat-weight">Вес (кг):*</label>
+              <input id="cat-weight" type="number" name="weight" placeholder="7">
+            </p>
+            <p class="pet__age">
+              <label for="cat-age">Возраст (лет):</label>
+              <input id="cat-age" type="number" name="age" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset class="application-form__select select">
+            <ul class="select__program program">
+              <li class="program__loss">
+                <input class="visually-hidden" type="radio" name="weight-check" value="loss" id="fat" checked>
+                <label for="fat">Похудение</label>
+              </li>
+              <li class="program__gain">
+                <input class="visually-hidden" type="radio" name="weight-check" value="gain" id="slim">
+                <label for="slim">Набор массы</label>
+              </li>
+              <li class="program__unknown">
+                <input class="visually-hidden" type="radio" name="weight-check" value="unknown" id="zero">
+                <label for="zero">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="application-form__owner owner">
+            <legend class="owner__legend">Контактные данные (владельца кота)</legend>
+            <p class="owner__email">
+              <label for="owner-email">e-mail:*</label>
+              <input id="owner-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="owner__tel">
+              <label for="owner-tel">Телефон:*</label>
+              <input id="owner-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+            </p>
+          </fieldset>
+          <fieldset class="application-form__comment comment">
+            <legend class="comment__legend">Комментарий</legend>
+            <textarea name="content" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="application-form__additional-check additional-check">
+            <legend class="additional-check__legend">Дополнительно</legend>
+            <ul class="additional-check__checklist checklist">
+              <li class="checklist__item">
+                <input class="visually-hidden" type="checkbox" name="sugarless" id="filter-sugerless" checked>
+                <label for="filter-sugerless">Сахарозаменитель</label>
+              </li>
+              <li class="checklist__item">
+                <input class="visually-hidden" type="checkbox" name="water" id="filter-water">
+                <label for="filter-water">Питьевая вода</label>
+              </li>
+              <li class="checklist__item">
+                <input class="visually-hidden" type="checkbox" name="milk" id="filter-milk">
+                <label for="filter-milk">Молоко</label>
+              </li>
+              <li class="checklist__item">
+                <input class="visually-hidden" type="checkbox" name="vitamin" id="filter-vitamin">
+                <label for="filter-vitamin">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="application-form__button button" type="submit">Отправить заявку</button>
+          <small class="application-form__legend application-form__legend--top">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <a class="contacts__map" href="#">
+          <img src="https://via.placeholder.com/150x150" width="320" height="400" alt="Карта расположения офиса «Кэт энерджи» по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </a>
+      </div>
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Интернет-магазин функционального питания для котов «Кэт энерджи»">
+      </a>
+      <div class="page-footer__cosials cosials">
+        <ul class="cosials__list">
+          <li class="cosials__item">
+            <a class="cosials__link cosials__link--vkontakte" href="#">Мы в Вконтакте</a>
+          </li>
+          <li class="cosials__item">
+            <a class="cosials__link cosials__link--instagram" href="#">Мы в Инстаграм</a>
+          </li>
+          <li class="cosials__item">
+            <a class="cosials__link cosials__link--facebook" href="#">Мы в Фейсбук</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
