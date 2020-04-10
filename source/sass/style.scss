@@ -20,11 +20,11 @@
 @import "../sass/mixins.scss";
 
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/oswaldmedium.woff2') format('woff2'),
-  url('../fonts/oswaldmedium.woff') format('woff');
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+  url("../fonts/oswaldmedium.woff") format("woff");
 }
 
 html {
@@ -42,7 +42,7 @@ body {
 }
 
 .visually-hidden {
-  position:absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
