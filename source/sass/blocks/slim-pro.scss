@@ -1,0 +1,68 @@
+@import "../sass/variables.scss";
+
+.weight {
+  background-color: $alter-color;
+  min-height: 266px;
+
+  margin-top: 32px;
+  margin-bottom: -11px;
+}
+
+.weight__elipse {
+  background-color: $base-color;
+  width: 50px;
+  height: 51px;
+  border-radius: 50%;
+}
+
+.elipse__catslim {
+  width: 35px;
+  height: 49px;
+}
+
+.elipse__catpro {
+  width: 67px;
+  height: 28px;
+}
+
+.weight__title {
+  font-family: $base-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: #111111;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.weight__text {
+  font-family: $alter-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  text-align: left;
+
+  min-width: 223px;
+  height: 86px;
+
+  padding-left: 21px;
+  padding-right: 36px;
+}
+
+.weight__link {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #111111;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding-left: 21px;
+
+  background-image: url("../img/right-arrow-long.png");
+  background-repeat: no-repeat;
+}

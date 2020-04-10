@@ -1,0 +1,63 @@
+@import "../sass/variables.scss";
+
+.page-footer {
+  background-color: $alter-color;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts {
+  background-color: #ffffff;
+}
+
+.contacts__area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-footer__contacts--color {
+  background-color: $alter-color;
+}
+
+.contacts__text {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: left;
+
+  width: 123px;
+  height: 57px;
+}
+
+.contacts__address {
+  font-family: $alter-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  text-align: left;
+
+  min-width: 134px;
+  height: 53px;
+
+  padding-left: 25px;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  bottom: 175px;
+  right: 130px;
+
+  background-image: url("../img/map-pin-png-50.png");
+  width: 55px;
+  height: 53px;
+}

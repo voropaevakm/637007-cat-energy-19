@@ -1,0 +1,66 @@
+@import "../sass/variables.scss";
+
+.catalog__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog__title {
+  font-family: $base-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  color: #111111;
+}
+
+.product__title {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  width: 80px;
+  height: 35px;
+
+  margin-bottom: 18px;
+}
+
+.product__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__features {
+  font-family: $alter-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #444444;
+
+  padding-right: 64px;
+}
+
+.product__value {
+  font-family: $alter-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: right;
+  color: #444444;
+}
+
+.product__button {
+  min-width: 280px;
+  height: 40px;
+  padding: 10px 108px 12px 111px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}

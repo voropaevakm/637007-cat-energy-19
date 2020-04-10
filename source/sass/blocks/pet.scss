@@ -1,0 +1,111 @@
+@import "../sass/variables.scss";
+
+.application-form__title {
+  font-family: $base-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  color: #111111;
+}
+
+.application-form__text {
+  font-family: $base-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.application-form__pet,
+.application-form__select,
+.application-form__owner,
+.application-form__comment,
+.application-form__additional-check {
+  border: none;
+}
+
+.pet__label {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.petname__input {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #444444;
+
+  min-width: 229px;
+  height: 45px;
+
+  border: solid 1px $border-color;
+  /*opacity: 50%;*/
+}
+
+/*.application-form .pet__input::placeholder {
+  opacity: 100%;
+}*/
+
+.petweight__input {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #444444;
+
+  min-width: 204px;
+  height: 45px;
+
+  border: solid 1px $border-color;
+  /*opacity: 50%;*/
+}
+
+.petage__input {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #444444;
+
+  min-width: 172px;
+  height: 45px;
+
+  border: solid 1px $border-color;
+  /*opacity: 50%;*/
+}
+
+.pet__petname {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.pet__petweight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.pet__petage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 14px;
+}

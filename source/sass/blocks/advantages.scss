@@ -1,0 +1,73 @@
+@import "../sass/variables.scss";
+
+.advantages {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.advantages__title {
+  font-family: $base-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  color: #111111;
+}
+
+.advantages__list {
+  padding: 0;
+}
+
+.advantages__item {
+  background-color: $base-color;
+
+  min-width: 60px;
+  min-height: 60px;
+
+  list-style: none;
+}
+
+.advantages__item--leaf {
+  background-image: url("../img/advantage-leaf.png");
+  background-position: center;
+
+  width: 26px;
+  height: 29px;
+}
+
+.advantages__item--powder {
+  background-image: url("../img/advantage-powder.png");
+  background-position: center;
+
+  width: 29px;
+  height: 31px;
+}
+
+.advantages__item--dining {
+  background-image: url("../img/advantage-dining.png");
+  background-position: center;
+
+  width: 23px;
+  height: 30px;
+}
+
+.advantages__item--clock {
+  background-image: url("../img/advantage-clock.png");
+  background-position: center;
+
+  width: 26px;
+  height: 31px;
+}
+
+.advantages__text {
+  font-family: $alter-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #444444;
+
+  width: 280px;
+
+  padding-left: 80px;
+}

@@ -1,0 +1,47 @@
+@import "../sass/variables.scss";
+
+.additional-check__legend {
+  font-family: $base-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #111111;
+
+  width: 280px;
+}
+
+.additional-check__checklist {
+  list-style: none;
+}
+
+.checklist__label {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.application-form__button {
+  min-width: 280px;
+  height: 40px;
+  padding: 10px 68px 10px 68px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.application-form__legend {
+  font-family: $alter-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}

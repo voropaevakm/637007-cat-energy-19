@@ -1,0 +1,75 @@
+@import "../sass/blocks/additional-product.scss";
+@import "../sass/blocks/advantages.scss";
+@import "../sass/blocks/checklist.scss";
+@import "../sass/blocks/comment.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/cosials.scss";
+@import "../sass/blocks/extention.scss";
+@import "../sass/blocks/footer-logo.scss";
+@import "../sass/blocks/header-logo.scss";
+@import "../sass/blocks/live-example.scss";
+@import "../sass/blocks/navigation.scss";
+@import "../sass/blocks/owner.scss";
+@import "../sass/blocks/pet.scss";
+@import "../sass/blocks/product.scss";
+@import "../sass/blocks/program.scss";
+@import "../sass/blocks/select.scss";
+@import "../sass/blocks/slim-pro.scss";
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/oswaldmedium.woff2') format('woff2'),
+       url('../fonts/oswaldmedium.woff') format('woff');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #ffffff;
+}
+
+.visually-hidden {
+  position:absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 280px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: $base-color;
+
+  font-family: $base-font;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.button--alter-color {
+  background-color: $alter-color;
+  border: none;
+}
