@@ -1,0 +1,27 @@
+@import "../sass/variables.scss";
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.copyright__link {
+  font-family: $alter-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  text-align: left;
+  text-decoration: none;
+}
+
+.copyright__color {
+  fill: #666666;
+  min-width: 27px;
+  height: 34px;
+}
+
+.copyright__color:hover {
+  fill: $base-color;
+}

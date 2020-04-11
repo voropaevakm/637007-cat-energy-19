@@ -1,0 +1,42 @@
+@import "../sass/variables.scss";
+
+.live-example {
+  background-color: $alter-color;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.live-example__title {
+  font-family: $base-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #111111;
+  text-align: left;
+}
+
+.live-example__text {
+  font-family: $alter-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  text-align: left;
+
+  padding-right: 14px;
+  padding-bottom: 27px;
+}
+
+.live-example__info {
+  font-family: $base-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.live-example__range {
+  text-align: center;
+}

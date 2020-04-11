@@ -1,0 +1,30 @@
+@import "../sass/variables.scss";
+
+.site-list__item {
+  text-align: center;
+
+  list-style: none;
+}
+
+.site-list__link {
+  font-family: $base-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-navigation__toggle {
+  border: none;
+
+  background-color: #ffffff;
+
+  color: #222222;
+}
+
+.toggle__image {
+  width: 25px;
+  height: 19px;
+}

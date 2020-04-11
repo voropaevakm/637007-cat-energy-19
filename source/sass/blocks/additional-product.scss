@@ -1,0 +1,83 @@
+@import "../sass/variables.scss";
+
+.additional__title {
+  font-family: $base-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #111111;
+}
+
+.additional-product__name {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional-product__button {
+  min-width: 280px;
+  height: 40px;
+  padding: 10px 108px 12px 111px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.additional-product__features {
+  font-family: $alter-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: #444444;
+}
+
+.additional-product__value {
+  font-family: $alter-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: right;
+  color: #444444;
+}
+
+.additional__event {
+  background-image: url("../img/gift-photo-mobile.jpg");
+  width: 280px;
+  height: 289px;
+
+  margin-top: 57px;
+  margin-bottom: 35px;
+}
+
+.event__color {
+  fill: #ffffff;
+  width: 56px;
+  height: 61px;
+
+  margin-top: 65px;
+  margin-left: 113px;
+}
+
+.event__text {
+  font-family: $alter-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+
+  width: 159px;
+  min-height: 56px;
+
+  padding-top: 40px;
+  margin-left: 60px;
+}
