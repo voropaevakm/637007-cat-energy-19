@@ -1,44 +1,50 @@
 @import "../sass/variables.scss";
 
-.cosials__list {
+.socials__list {
   display: flex;
   flex-direction: row;
+
+  padding-top: 23px;
+  padding-bottom: 16px;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-.cosials__item {
+.socials__item {
   list-style: none;
 }
 
-.cosials__link--vkontakte .cosials__color {
+.socials__link--vkontakte .socials__color {
   fill: #666666;
   width: 22px;
   height: 12px;
 }
 
-.cosials__link--instagram .cosials__color {
+.socials__link--instagram .socials__color {
   fill: #666666;
   width: 17px;
   height: 17px;
 }
 
-.cosials__link--facebook .cosials__color {
+.socials__link--facebook .socials__color {
   fill: #666666;
   width: 10px;
   height: 19px;
 }
 
-.cosials__color:hover {
+.socials__color:hover {
   fill: $base-color;
 }
 
-.cosials__item .cosials__link--vkontakte {
-  padding-left: 53px;
+.socials__item .socials__link--vkontakte {
+  padding-left: 33px;
 }
 
-.cosials__item .cosials__link--instagram {
+.socials__item .socials__link--instagram {
   padding-left: 36px;
 }
 
-.cosials__item .cosials__link--facebook {
+.socials__item .socials__link--facebook {
   padding-left: 40px;
 }

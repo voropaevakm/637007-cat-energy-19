@@ -3,9 +3,15 @@
 .catalog__item {
   display: flex;
   flex-direction: row;
+  border-top: 1px solid #ededed;
+  margin-top: 27px;
 }
 
 .catalog__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 17px;
+
   font-family: $base-font;
   font-size: 36px;
   font-weight: 400;
@@ -15,6 +21,10 @@
 }
 
 .product__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 21px;
+
   font-family: $base-font;
   font-size: 16px;
   font-weight: 400;
@@ -31,6 +41,14 @@
 .product__flex {
   display: flex;
   flex-direction: column;
+  flex: none;
+}
+
+.product__table {
+
+  max-width: 141px;
+  margin-top: 18px;
+  margin-left: -3px;
 }
 
 .product__features {
@@ -41,7 +59,7 @@
   text-align: left;
   color: #444444;
 
-  padding-right: 64px;
+  padding-right: 59px;
 }
 
 .product__value {

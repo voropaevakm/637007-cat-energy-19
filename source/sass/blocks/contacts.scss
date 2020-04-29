@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+.page-footer__contacts {
+  max-height: 476px;
+}
+
 .contacts {
   background-color: #ffffff;
 }
@@ -31,6 +35,8 @@
 
   width: 123px;
   height: 57px;
+
+  margin-top: 28px;
 }
 
 .contacts__address {
@@ -44,7 +50,9 @@
   min-width: 134px;
   height: 53px;
 
-  padding-left: 25px;
+  padding-left: 29px;
+  margin-top: 28px;
+  margin-bottom: 32px;
 }
 
 .contacts__map {
@@ -54,7 +62,7 @@
 .contacts__map::before {
   content: "";
   position: absolute;
-  bottom: 175px;
+  bottom: 173px;
   right: 130px;
 
   background-image: url("../img/map-pin-png-50.png");

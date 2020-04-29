@@ -3,6 +3,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid $alter-color;
 }
 
 .page-header__logo {
@@ -17,6 +18,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+  }
+
+
   .page-header__logo .page-header__logo-image {
     display: block;
     width: 174px;
@@ -28,7 +34,8 @@
   }
 
   .page-header__logo {
-    width: 100%;
+    /*width: 100%;*/
+    min-width: 174px;
     height: 59px;
 
     background-color: #ffffff;

@@ -1,6 +1,8 @@
 @import "../sass/variables.scss";
 
 .additional-check__legend {
+  position: relative;
+
   font-family: $base-font;
   font-size: 24px;
   font-weight: 400;
@@ -9,13 +11,41 @@
   color: #111111;
 
   width: 280px;
+
+  padding-top: 14px;
+  padding-bottom: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    right: -23px;
+
+    min-width: 50%;
+    width: auto;
+    border: 2px solid $base-color;
+  }
 }
 
 .additional-check__checklist {
   list-style: none;
 }
 
+.checklist__item {
+  padding-top: 14px;
+  padding-left: 6px;
+  padding-bottom: 8px;
+}
+
+.checklist__input {
+  margin-left: -17px;
+  opacity: 0;
+}
+
 .checklist__label {
+  position: relative;
+  cursor: pointer;
+
   font-family: $base-font;
   font-size: 16px;
   font-weight: 400;
@@ -23,6 +53,49 @@
   text-align: left;
   text-transform: uppercase;
   color: #222222;
+
+  &::before {
+    content: "";
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: -3px;
+    left: -46px;
+
+    border: 1px solid $border-color;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+
+    width: 20px;
+    height: 13px;
+
+    border-left: 2px solid $base-color;
+    border-bottom: 2px solid $base-color;
+
+    transform: rotate(-45deg);
+
+    position: absolute;
+    top: 2px;
+    left: -41px;
+  }
+}
+
+.application-form__additional-check input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.application-form__additional-check input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.application-form__additional-check input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .application-form__button {
@@ -35,6 +108,8 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+
+  margin-top: 5px;
 }
 
 .application-form__legend {
@@ -44,4 +119,7 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+
+  margin-top: 21px;
+  margin-bottom: 32px;
 }

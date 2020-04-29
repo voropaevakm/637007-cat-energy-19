@@ -7,6 +7,8 @@
   line-height: 60px;
   text-align: left;
   color: #111111;
+
+  padding-top: 16px;
 }
 
 .application-form__text {
@@ -17,6 +19,10 @@
   text-align: left;
   text-transform: uppercase;
   color: #111111;
+
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 33px;
 }
 
 .application-form__pet,
@@ -50,6 +56,12 @@
   height: 45px;
 
   border: solid 1px $border-color;
+
+  margin-left: 14px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
   /*opacity: 50%;*/
 }
 
@@ -70,6 +82,12 @@
   height: 45px;
 
   border: solid 1px $border-color;
+
+  margin-left: 16px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
   /*opacity: 50%;*/
 }
 
@@ -86,6 +104,12 @@
   height: 45px;
 
   border: solid 1px $border-color;
+
+  margin-left: 14px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
   /*opacity: 50%;*/
 }
 

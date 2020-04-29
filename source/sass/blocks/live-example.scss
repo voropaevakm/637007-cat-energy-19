@@ -4,6 +4,8 @@
   background-color: $alter-color;
   width: 320px;
   margin: 0 auto;
+
+  margin-top: 13px;
 }
 
 .live-example__title {
@@ -13,6 +15,8 @@
   line-height: 60px;
   color: #111111;
   text-align: left;
+
+  padding-top: 18px;
 }
 
 .live-example__text {
@@ -24,10 +28,16 @@
   text-align: left;
 
   padding-right: 14px;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
+  padding-top: 24px;
 }
 
 .live-example__info {
+  margin: 0;
+  padding: 0;
+  margin-top: 34px;
+  margin-bottom: 37px;
+
   font-family: $base-font;
   font-size: 14px;
   font-weight: 400;
@@ -37,6 +47,95 @@
   text-transform: uppercase;
 }
 
+.live-example__image {
+  margin-left: 4px;
+}
+
 .live-example__range {
   text-align: center;
+
+  margin-top: 28px;
+  padding-bottom: 35px;
+}
+
+.live-example__weight {
+  display: flex;
+  position: relative;
+}
+
+.live-example__kilograms {
+  font-family: $base-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 4%;
+
+  padding: 13px 42px 17px 42px;
+  margin-right: 32px;
+
+  &::before {
+    display: block;
+    content: "снижение веса";
+
+    font-family: $alter-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    text-transform: none;
+    color: #444444;
+
+    position: absolute;
+    top: 47px;
+    left: 34px;
+
+    width: 54px;
+    height: 19px;
+  }
+}
+
+.live-example__days {
+  font-family: $base-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5%;
+
+  padding: 13px 20px 17px 20px;
+
+  &::before {
+    display: block;
+    content: "затрачено времени";
+
+    font-family: $alter-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    text-transform: none;
+    color: #444444;
+
+    position: absolute;
+    top: 47px;
+    right: 34px;
+
+    width: 57px;
+    height: 22px;
+  }
+}
+
+.pet-range__min,
+.pet-range__max {
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
 }

@@ -1,9 +1,15 @@
 @import "../sass/variables.scss";
 
+.page-footer__copyright {
+  padding-top: 14px;
+}
+
 .copyright {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  margin-left: auto;
+  align-self: baseline;
+  justify-content: space-between;
+  flex: none;
 }
 
 .copyright__link {
@@ -18,8 +24,11 @@
 
 .copyright__color {
   fill: #666666;
-  min-width: 27px;
-  height: 34px;
+  min-width: 40px;
+  height: 40px;
+  margin-top: -11px;
+  margin-right: -6px;
+  margin-bottom: 22px;
 }
 
 .copyright__color:hover {

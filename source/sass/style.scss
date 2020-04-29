@@ -61,8 +61,15 @@ img {
 }
 
 .container {
-  width: 280px;
+  width: 87.5%; /*280px;*/
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 92.5%;
+  }
+  @media (min-width: $desktop-width) {
+    width: 84.7%;
+  }
 }
 
 .button {
@@ -73,9 +80,13 @@ img {
   text-transform: uppercase;
 
   border: none;
+
+  width: 100%;
 }
 
 .button--alter-color {
   background-color: $alter-color;
   border: none;
+
+  width: 100%;
 }

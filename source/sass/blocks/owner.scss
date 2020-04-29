@@ -1,6 +1,9 @@
 @import "../sass/variables.scss";
 
 .owner__legend {
+  position: relative;
+  display: block;
+
   font-family: $base-font;
   font-size: 24px;
   font-weight: 400;
@@ -9,6 +12,19 @@
   color: #111111;
 
   width: 280px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    right: -21px;
+
+    min-width: 36%;
+    width: auto;
+    border: 2px solid $base-color;
+  }
 }
 
 .owner__label {
@@ -34,6 +50,12 @@
   height: 45px;
 
   border: solid 1px $border-color;
+
+  margin-left: 10px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
 }
 
 .ownertel__input {
@@ -49,6 +71,11 @@
   height: 45px;
 
   border: solid 1px $border-color;
+  margin-left: 5px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
 }
 
 .owner__owneremail {
