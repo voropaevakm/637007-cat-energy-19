@@ -1,12 +1,30 @@
 @import "../sass/variables.scss";
 
 .program {
-  background: url("../img/index-background-mobile.jpg") #65a93c;
+  position: relative;
+
+  background: url("../img/index-background-mobile@1x.jpg") #65a93c;
   background-position: center 3px;
   background-repeat: no-repeat;
 
   text-align: center;
   margin-bottom: 200px;
+
+  /*@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }*/
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 167px;
+    left:19px;
+
+    background-image: url("../img/index-can-mobile.png");
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 270px;
+  }
 }
 
 .program div {
@@ -60,26 +78,39 @@
   min-height: 38px;
 
   padding: 11px 73px 10px 73px;
+  margin-top: 289px;
 }
 
 @media (min-width: $tablet-width) {
   .program {
     position: relative;
+
     background-image: none;
     background-color: #ffffff;
 
     margin-bottom: 505px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 200px;
+      left: 29px;
+
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      width: 709px;
+      height: 609px;
+    }
   }
 
   .program img {
     margin: 0;
     padding: 0;
+  }
 
+  .program__image {
     min-width: 709px;
     min-height: 609px;
-
-    /*margin-top: 28px;
-    margin-bottom: 15px;*/
   }
 
   .program__title {
@@ -130,27 +161,44 @@
 
     max-width: 246px;
     min-height: 52px;
+
+    z-index: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .program::before {
-    content: "";
+  .program {
+    margin: 0;
 
-    position: absolute;
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 560px;
 
-    top: -144px;
-    right: 0;
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-repeat: no-repeat;
 
-    width: 720px;
-    height: 696px;
+      width: 552px;
+      height: 499px;
 
-    z-index: 0;
-  }
+      z-index: 0;
+    }
 
-  .program img {
-    z-index: 2;
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -142px;
+      right: 0;
+
+      width: 720px;
+      height: 696px;
+
+      z-index: 0;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
   }
 
   .program div {
@@ -160,7 +208,7 @@
   .program__title {
     margin-top: -6px;
     margin-left: 81px;
-    padding-top: 78px;
+    padding-top: 81px;
 
     width: 45%;
   }
@@ -171,7 +219,7 @@
   }
 
   .program__button {
-    top: 311px;
+    top: 314px;
     left: 190px;
   }
 }

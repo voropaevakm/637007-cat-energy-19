@@ -1,12 +1,43 @@
 @import "../sass/variables.scss";
 
 .additional__title {
+  position: relative;
+
+  border-top: 1px solid $alter-color;
+  background-color: #ffffff;
+  width: 247px;
+
   font-family: $base-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   color: #111111;
+
+  padding-top: 28px;
+  padding-bottom: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+  /*  right: -21px;*/
+  background-color: $base-color;
+
+    width: 100vw;
+    height: 3px;
+    z-index: -2;
+  /*  width: auto;*/
+
+  /*  border: 2px solid $base-color;*/
+  }
+}
+
+.additional-product {
+  border-top: 1px solid $border-color;
+
+  padding-top: 13px;
+  margin-top: 17px;
 }
 
 .additional-product__name {
@@ -22,6 +53,7 @@
 .additional-product__button {
   min-width: 280px;
   height: 40px;
+
   padding: 10px 108px 12px 111px;
 
   font-size: 16px;
@@ -31,6 +63,14 @@
   color: #ffffff;
 }
 
+.additional-product__table {
+  min-width: 280px;
+
+  border-collapse: collapse;
+
+  margin-bottom: 14px;
+}
+
 .additional-product__features {
   font-family: $alter-font;
   font-size: 14px;
@@ -38,6 +78,10 @@
   line-height: 14px;
   text-align: left;
   color: #444444;
+
+  width: 50%;
+
+  padding-top: 10px;
 }
 
 .additional-product__value {
@@ -47,19 +91,29 @@
   line-height: 14px;
   text-align: right;
   color: #444444;
+
+  width: 50%;
+
+  padding-top: 10px;
 }
 
 .additional__event {
-  background-image: url("../img/gift-photo-mobile.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+
   width: 280px;
   height: 289px;
 
   margin-top: 57px;
   margin-bottom: 35px;
+
+  /*@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }*/
 }
 
 .event__color {
   fill: #ffffff;
+
   width: 56px;
   height: 61px;
 
@@ -75,9 +129,237 @@
   text-align: center;
   color: #ffffff;
 
-  width: 159px;
-  min-height: 56px;
+  width: 162px;
 
-  padding-top: 40px;
-  margin-left: 60px;
+  padding-top: 41px;
+  margin-left: 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional__item {
+    margin: 0;
+  }
+
+  .additional__title {
+    position: relative;
+
+    border: none;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    padding-left: 38px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+    width: 413px;
+
+    &::before {
+      top: 51px;
+
+      width: 100vw;
+      height: 2px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 51px;
+      right: 100%;
+
+      background-color: $base-color;
+
+      width: 100vw;
+      height: 2px;
+
+      z-index: -2;
+    }
+  }
+
+
+  .additional-product {
+    border: 1px solid $border-color;
+  }
+
+  .additional-product__name {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-top: 12px;
+    margin-left: 39px;
+  }
+
+  .additional-product__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-product__table {
+    margin-top: 16px;
+  }
+
+  .additional-product__features,
+  .additional-product__value {
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-product__features {
+    text-align: right;
+  }
+
+  .additional-product__value {
+    width: 45%;
+
+    padding-right: 38px;
+  }
+
+  .additional-product__button {
+    max-width: 633px;
+
+    margin-top: 8px;
+    margin-left: 38px;
+    margin-bottom: 26px;
+    padding-left: 104px;
+  }
+
+  .additional__event {
+    display: flex;
+    justify-content: space-around;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+
+    width: 708px;
+
+    margin-top: 70px;
+    margin-bottom: -15px;
+  }
+
+  .event__color {
+    margin-left: -19px;
+  }
+
+  .event__text {
+    padding-top: 56px;
+    margin-right: 11px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional__title {
+    margin-left: -2px;
+    margin-top: 50px;
+  }
+
+ .additional__wrapper {
+    display: flex;
+  }
+
+  .additional__items-together {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .additional__item {
+    display: flex;
+
+    width: 895px;
+
+    justify-content: space-between;
+  }
+
+  .additional__event {
+    flex-direction: column;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+
+    margin-top: 0;
+    margin-left: 80px;
+    margin-bottom: 84px;
+  }
+
+  .additional-product {
+    border: none;
+    border-top: 1px solid $border-color;
+
+    &--lastone {
+        border-bottom: 1px solid $border-color;
+    }
+  }
+
+  .event__text {
+    text-align: center;
+
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: -22px;
+    margin-left: 42px;
+  }
+
+  .event__color {
+    margin-top: 22px;
+    margin-left: 97px;
+  }
+
+  .additional-product__name {
+    margin-left: 1px;
+
+    &--sugar {
+      margin-right: 163px;
+    }
+
+    &--water {
+      margin-right: 196px;
+    }
+
+    &--milk {
+      margin-right: 257px;
+    }
+
+    &--vitamins {
+      margin-right: 235px;
+    }
+  }
+
+  .additional-product__button {
+    max-width: 244px;
+    min-width: 244px;
+
+    padding: 10px 71px 7px 70px;
+
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  .additional-product__features {
+    width: 50%;
+    text-align: left;
+  }
+
+  .additional-product__value {
+    width: 50%;
+    padding: 0;
+
+    text-align: right;
+  }
+
+  .additional-product__value--50 {
+    text-align: justify;
+    padding-left: 101px;
+  }
+
+  .additional-product__flex {
+    justify-content: space-between;
+  }
+
+  .additional-product__table {
+    width: 285px;
+  }
 }

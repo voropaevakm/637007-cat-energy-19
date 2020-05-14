@@ -1,21 +1,36 @@
 @import "../sass/variables.scss";
 
-.extention {
-  background-image: url("../img/plus-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.catalog__extention {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    background-image: url("../img/plus-mobile.png");
+    background-repeat: no-repeat;
+
+    bottom: 127px;
+    left: 125px;
+
+    width: 31px;
+    height: 31px;
+  }
+}
+
+.extention__plus {
+  display: none;
 }
 
 .extention__button {
+  padding: 0;
+
   height: 40px;
-  padding: 10px 92px 12px 92px;
-  //* не получает шрифт из button*//
-  font-family: $base-font;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  text-transform: uppercase;
   color: #444444;
 }
 
@@ -27,13 +42,108 @@
   text-align: center;
   text-transform: uppercase;
   color: #111111;
+
+  margin-top: 27px;
+  margin-bottom: 7px;
+  padding-top: 79px;
+
+  border-top: 1px solid $alter-color;
 }
 
 .extention__slogan {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
   font-family: $alter-font;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+
+  .catalog__extention {
+    width: 324px;
+
+    margin-top: 138px;
+
+    border: 1px solid $border-color;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .extention__plus {
+    display: block;
+
+    fill: #e6e6e6;
+
+    margin-top: 55px;
+    margin-left: 130px;
+  }
+
+  .extention__text {
+    margin: 0;
+    padding: 0;
+    margin-left: 93px;
+    margin-top: 48px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    width: 135px;
+
+    border-top: none;
+  }
+
+  .extention__slogan {
+    margin: 0;
+    padding: 0;
+    margin-left: 75px;
+    margin-top: 27px;
+
+    font-size: 16px;
+    line-height: 18px;
+
+    width: 170px;
+  }
+
+  .extention__button {
+    margin: 0;
+    padding: 0;
+    margin-left: 36px;
+    margin-top: 85px;
+
+    min-width: 249px;
+    max-width: 249px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__extention {
+    width: 245px;
+  }
+
+  .extention__plus {
+    margin-left: 91px;
+  }
+
+  .extention__text {
+    margin-top: 51px;
+    margin-left: 54px;
+  }
+
+  .extention__slogan {
+    margin-left: 37px;
+    margin-top: 25px;
+  }
+
+  .extention__button {
+    min-width: 169px;
+    max-width: 169px;
+  }
 }
