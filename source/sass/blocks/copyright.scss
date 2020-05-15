@@ -1,9 +1,16 @@
 @import "../sass/variables.scss";
 
+.page-footer__copyright {
+  padding-top: 14px;
+}
+
 .copyright {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  align-self: baseline;
+  justify-content: space-between;
+  flex: none;
+
+  margin-left: auto;
 }
 
 .copyright__link {
@@ -18,10 +25,43 @@
 
 .copyright__color {
   fill: #666666;
-  min-width: 27px;
-  height: 34px;
+
+  min-width: 40px;
+  height: 40px;
+
+  margin-top: -11px;
+  margin-right: -6px;
+  margin-bottom: 22px;
 }
 
 .copyright__color:hover {
   fill: $base-color;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+
+    width: 162px;
+  }
+
+  .copyright__link {
+    margin-top: 12px;
+    margin-right: 17px;
+  }
+
+  .copyright__color {
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    margin-top: 13px;
+  }
+
+  .copyright__color {
+    margin-top: 3px;
+    margin-bottom: 50px;
+  }
 }

@@ -7,6 +7,8 @@
   line-height: 60px;
   text-align: left;
   color: #111111;
+
+  padding-top: 16px;
 }
 
 .application-form__text {
@@ -17,6 +19,10 @@
   text-align: left;
   text-transform: uppercase;
   color: #111111;
+
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 33px;
 }
 
 .application-form__pet,
@@ -50,12 +56,13 @@
   height: 45px;
 
   border: solid 1px $border-color;
-  /*opacity: 50%;*/
-}
 
-/*.application-form .pet__input::placeholder {
-  opacity: 100%;
-}*/
+  margin-left: 14px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
+}
 
 .petweight__input {
   font-family: $base-font;
@@ -70,7 +77,12 @@
   height: 45px;
 
   border: solid 1px $border-color;
-  /*opacity: 50%;*/
+
+  margin-left: 16px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
 }
 
 .petage__input {
@@ -86,13 +98,19 @@
   height: 45px;
 
   border: solid 1px $border-color;
-  /*opacity: 50%;*/
+
+  margin-left: 14px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
 }
 
 .pet__petname {
   display: flex;
   flex-direction: row;
   align-items: center;
+
   margin-bottom: 14px;
 }
 
@@ -100,6 +118,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
   margin-bottom: 14px;
 }
 
@@ -107,5 +126,119 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
   margin-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-form__title {
+    font-size: 60px;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .application-form__text {
+    margin: 0;
+    padding: 50px 333px 59px 41px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    min-width: 322px;
+  }
+
+  .pet__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-left: 30px;
+  }
+
+  .pet__petname,
+  .pet__petweight,
+  .pet__petage {
+    margin-bottom: 20px;
+  }
+
+  .petname__input {
+    font-size: 20px;
+    line-height: 20px;
+
+    min-width: 567px;
+    height: 52px;
+
+    margin-left: 16px;
+
+    &::placeholder {
+      padding-left: 19px;
+    }
+  }
+
+  .petweight__input {
+    font-size: 20px;
+    line-height: 20px;
+
+    min-width: 536px;
+    height: 52px;
+
+    margin-left: 20px;
+
+    &::placeholder {
+      padding-left: 17px;
+    }
+  }
+
+  .petage__input {
+    font-size: 20px;
+    line-height: 20px;
+
+    min-width: 497px;
+    height: 52px;
+
+    margin-left: 18px;
+
+    &::placeholder {
+      padding-left: 16px;
+    }
+  }
+
+  .application-form__pet {
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-form__title {
+    padding-top: 42px;
+  }
+
+  .application-form__text {
+    margin: 0;
+    padding: 54px 832px 60px; /*0px*/
+  }
+
+  .application-form__pet {
+    max-width: 586px;
+    padding-bottom: 50px;
+  }
+
+  .petname__input {
+    min-width: 506px;
+  }
+
+  .petweight__input {
+    min-width: 474px;
+  }
+
+  .petage__input {
+    min-width: 435px;
+    margin-left: 17px;
+    padding-left: 3px;
+  }
+
+  .application-form__pet-flex {
+    display: flex;
+    justify-content: center;
+  }
 }

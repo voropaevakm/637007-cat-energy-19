@@ -1,44 +1,95 @@
 @import "../sass/variables.scss";
 
-.cosials__list {
+.socials__list {
   display: flex;
   flex-direction: row;
+
+  padding-top: 23px;
+  padding-bottom: 16px;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-.cosials__item {
+.socials__item {
   list-style: none;
 }
 
-.cosials__link--vkontakte .cosials__color {
+.socials__color {
   fill: #666666;
-  width: 22px;
-  height: 12px;
 }
 
-.cosials__link--instagram .cosials__color {
-  fill: #666666;
-  width: 17px;
-  height: 17px;
-}
-
-.cosials__link--facebook .cosials__color {
-  fill: #666666;
-  width: 10px;
-  height: 19px;
-}
-
-.cosials__color:hover {
+.socials__color:hover {
   fill: $base-color;
 }
 
-.cosials__item .cosials__link--vkontakte {
-  padding-left: 53px;
+.socials__item .socials__link--vkontakte {
+  padding-left: 33px;
 }
 
-.cosials__item .cosials__link--instagram {
+.socials__item .socials__link--instagram {
   padding-left: 36px;
 }
 
-.cosials__item .cosials__link--facebook {
+.socials__item .socials__link--facebook {
   padding-left: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__list {
+    border: none;
+
+    padding: 0;
+    margin: 0;
+
+    /*margin-top: 54px;*/
+    margin-left: 233px;
+    max-height: 28px;
+    margin-top: -80px;
+
+    align-items: center;
+  }
+
+  .socials__item {
+    margin-top: 100px;
+  }
+
+  .socials__item .socials__link--vkontakte {
+    padding-left: 52px;
+  }
+
+  .socials__item .socials__link--instagram {
+    padding-left: 28px;
+  }
+
+  .socials__item .socials__link--facebook {
+    padding-left: 30px;
+  }
+
+  .socials__link--vkontakte .socials__color {
+    width: 30px;
+    height: 16px;
+
+    viewbox: 0 0 30 16;
+  }
+
+  .socials__link--instagram .socials__color {
+    width: 23px;
+    height: 23px;
+
+    viewbox: 0 0 23 23;
+  }
+
+  .socials__link--facebook .socials__color {
+    width: 14px;
+    height: 28px;
+
+    viewbox: 0 0 14 28;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials__list {
+    margin-left: 487px;
+  }
 }

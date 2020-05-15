@@ -1,9 +1,36 @@
 @import "../sass/variables.scss";
 
+.page-footer {
+  min-height: 751px;
+}
+
 .page-footer__logo {
   padding-left: 96px;
 }
 
 .page-footer__logo-image {
-  margin-top: 39px;
+  margin-top: 40px;
+  margin-bottom: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo-image {
+    padding-top: 189px;
+    margin: 0;
+  }
+
+  .page-footer__logo {
+    padding-left: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    min-height: 100%;
+  }
+
+  .page-footer__logo-image {
+    padding-top: 62px;
+    margin-left: 79px;
+  }
 }

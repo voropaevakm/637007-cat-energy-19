@@ -1,0 +1,60 @@
+@import "../sass/variables.scss";
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid $alter-color;
+}
+
+.page-header__logo {
+  height: 65px;
+}
+
+.page-header__logo-image {
+  width: 191px;
+  height: 39px;
+
+  margin-left: 20px;
+  margin-top: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+
+    border: none;
+  }
+
+  .page-header__logo .page-header__logo-image {
+    display: block;
+
+    width: 174px;
+    height: auto;
+
+    margin-top: 24px;
+    margin-left: 29px;
+  }
+
+  .page-header__logo {
+    /*width: 100%;*/
+    min-width: 174px;
+    height: 59px;
+
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo .page-header__logo-image {
+    margin: 0;
+    min-width: 203px;
+  }
+
+  .page-header__logo {
+    height: 60px;
+
+    margin-top: 53px;
+    margin-left: 109px;
+  }
+}

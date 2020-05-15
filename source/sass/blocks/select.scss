@@ -1,10 +1,39 @@
 @import "../sass/variables.scss";
 
 .select__prog {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.prog__loss {
+  margin-top: 21px;
+  padding-left: 34px;
+  padding-bottom: 22px;
+}
+
+.prog__gain {
+  padding-left: 34px;
+  padding-bottom: 22px;
+}
+
+.prog__unknown {
+  padding-left: 34px;
+  padding-bottom: 15px;
+}
+
+.prog_input {
+  margin-left: -17px;
+
+  opacity: 0;
+}
+
 .prog__label {
+  position: relative;
+
+  cursor: pointer;
+
   font-family: $base-font;
   font-size: 16px;
   font-weight: 400;
@@ -12,4 +41,126 @@
   text-align: left;
   text-transform: uppercase;
   color: #222222;
+
+  &::before {
+    content: "";
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: -4px;
+    left: -46px;
+
+    border: 1px solid $border-color;
+    border-radius: 30px;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    position: absolute;
+    top: 5px;
+    left: -37px;
+
+    background-color: $base-color;
+    border-radius: 50%;
+  }
+}
+
+.application-form__select input[type="radio"] + label::after {
+  content: none;
+}
+
+.application-form__select input[type="radio"]:checked + label::after {
+  content: "";
+}
+
+.application-form__select input[type="radio"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+.application-form__select {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .application-form__select {
+    border: 1px solid $border-color;
+
+    width: 630px;
+    height: 196px;
+
+    margin-left: 71px;
+  }
+
+  .prog__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-left: 14px;
+
+    &::before {
+      content: "";
+
+      width: 40px;
+      height: 40px;
+
+      position: absolute;
+      top: -4px;
+      left: -46px;
+    }
+
+    &::after {
+      content: "";
+
+      width: 18px;
+      height: 18px;
+
+      position: absolute;
+      top: 7px;
+      left: -35px;
+    }
+  }
+
+  .prog__loss {
+    margin-top: 28px;
+    padding-left: 38px;
+    padding-bottom: 31px;
+  }
+
+  .prog__gain {
+    padding-left: 38px;
+    padding-bottom: 29px;
+  }
+
+  .prog__unknown {
+    padding-left: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-form__select {
+    margin: 0;
+    padding: 0;
+    margin-right: 110px;
+    margin-top: 4px;
+    width: 570px;
+  }
+
+  .prog__loss {
+    margin-top: 35px;
+    padding-left: 30px;
+  }
+
+  .prog__gain,
+  .prog__unknown {
+    padding-left: 30px;
+  }
 }

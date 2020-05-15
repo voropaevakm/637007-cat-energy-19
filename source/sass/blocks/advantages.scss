@@ -1,8 +1,12 @@
 @import "../sass/variables.scss";
 
 .advantages {
-  padding-top: 27px;
+  padding-top: 23px;
   padding-bottom: 27px;
+
+  & span {
+    display: none;
+  }
 }
 
 .advantages__title {
@@ -29,14 +33,18 @@
 
 .advantages__item--leaf {
   background-image: url("../img/advantage-leaf.png");
+  background-repeat: no-repeat;
   background-position: center;
 
   width: 26px;
   height: 29px;
+
+  margin-top: 28px;
 }
 
 .advantages__item--powder {
   background-image: url("../img/advantage-powder.png");
+  background-repeat: no-repeat;
   background-position: center;
 
   width: 29px;
@@ -45,6 +53,7 @@
 
 .advantages__item--dining {
   background-image: url("../img/advantage-dining.png");
+  background-repeat: no-repeat;
   background-position: center;
 
   width: 23px;
@@ -53,10 +62,13 @@
 
 .advantages__item--clock {
   background-image: url("../img/advantage-clock.png");
+  background-repeat: no-repeat;
   background-position: center;
 
   width: 26px;
   height: 31px;
+
+  margin-top: -2px;
 }
 
 .advantages__text {
@@ -70,4 +82,88 @@
   width: 280px;
 
   padding-left: 80px;
+  margin-top: 21px;
+  padding-top: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 45px;
+
+    & span {
+      display: block;
+
+      position: absolute;
+      top: -38px;
+      left: 114px;
+
+      margin: 0;
+      padding: 0;
+
+      height: 281px;
+
+      font-family: $base-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: $alter-color;
+
+      z-index: -1;
+    }
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: none;
+  }
+
+  .advantages__item {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    margin-right: 245px;
+    margin-top: 72px;
+    margin-bottom: 165px;
+
+    min-width: 80px;
+    min-height: 80px;
+  }
+
+  .advantages__text {
+    display: inline-block;
+
+    margin-left: -80px;
+    margin-top: 111px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    min-width: 201px;
+
+    &--diningleaf {
+      min-width: 345px;
+    }
+
+    &--powderclock {
+      min-width: 360px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    padding-top: 29px;
+  }
+
+  .advantages__item {
+    margin-right: 165px;
+  }
 }

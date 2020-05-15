@@ -1,6 +1,11 @@
 @import "../sass/variables.scss";
 
 .owner__legend {
+  position: relative;
+  display: block;
+
+  background-color: #ffffff;
+
   font-family: $base-font;
   font-size: 24px;
   font-weight: 400;
@@ -8,7 +13,24 @@
   text-align: left;
   color: #111111;
 
-  width: 280px;
+  width: 203px;
+
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-left: -1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+
+    width: 100vw;
+    height: 3px;
+
+    background-color: $base-color;
+
+    z-index: -2;
+  }
 }
 
 .owner__label {
@@ -19,6 +41,8 @@
   text-align: left;
   text-transform: uppercase;
   color: #222222;
+
+  width: 62px;
 }
 
 .owneremail__input {
@@ -34,6 +58,23 @@
   height: 45px;
 
   border: solid 1px $border-color;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
+}
+
+.owner {
+  position: relative;
+}
+
+.owneremail__mail {
+  position: absolute;
+  top: 126px;
+  right: 29px;
+
+  width: 18px;
+  height: 14px;
 }
 
 .ownertel__input {
@@ -49,12 +90,28 @@
   height: 45px;
 
   border: solid 1px $border-color;
+
+  margin-left: 5px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
+}
+
+.ownertel__phone {
+  position: absolute;
+  top: 182px;
+  right: 25px;
+
+  width: 21px;
+  height: 21px;
 }
 
 .owner__owneremail {
   display: flex;
   flex-direction: row;
   align-items: center;
+
   margin-bottom: 14px;
 }
 
@@ -62,5 +119,159 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
   margin-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .owner__legend {
+    font-size: 36px;
+    line-height: 36px;
+
+    width: 591px;
+
+    padding-top: 75px;
+    padding-left: 38px;
+    padding-bottom: 71px;
+    margin-left: -10px;
+
+    &::before {
+      top: 97px;
+
+      width: 100vw;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 97px;
+      right: 100%;
+
+      background-color: $base-color;
+
+      width: 100vw;
+      height: 3px;
+
+      z-index: -2;
+    }
+  }
+
+  .owner__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-left: 29px;
+
+    width: 92px;
+  }
+
+  .owneremail__input {
+    width: 551px;
+    height: 52px;
+
+    margin-left: 19px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+
+      padding-left: 19px;
+    }
+  }
+
+  .owneremail__mail {
+    position: absolute;
+    top: 206px;
+    right: 56px;
+  }
+
+  .owner__owneremail {
+    margin-bottom: 20px;
+  }
+
+  .ownertel__input {
+    width: 535px;
+    height: 52px;
+
+    margin-left: 9px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+
+      padding-left: 20px;
+    }
+  }
+
+  .ownertel__phone {
+    position: absolute;
+    top: 275px;
+    right: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner__legend {
+    position: relative;
+
+    padding: 0;
+    padding-left: 37px;
+    margin-left: -50px;
+
+    width: 591px;
+
+    &::before {
+      top: 21px;
+
+      width: 100vw;
+    }
+
+    &::after {
+      top: 21px;
+
+      right: 100%;
+
+      background-color: $base-color;
+
+      width: 100vw;
+    }
+  }
+
+  .owner__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .owner__label {
+    padding: 0;
+    margin-left: -11px;
+  }
+
+  .owneremail__input {
+    width: 486px;
+    margin-left: -9px;
+  }
+
+  .owneremail__mail {
+    top: 131px;
+    right: 669px;
+  }
+
+  .ownertel__input {
+    width: 470px;
+
+    margin-left: 8px;
+    margin-right: -10px;
+  }
+
+  .ownertel__phone {
+    top: 128px;
+    right: 18px;
+  }
+
+  .owner__owneremail,
+  .owner__ownertel {
+    margin: 0;
+    margin-top: 70px;
+  }
 }

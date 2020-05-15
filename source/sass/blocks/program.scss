@@ -1,23 +1,59 @@
 @import "../sass/variables.scss";
 
 .program {
-  background-image: url("../img/index-background-mobile.jpg");
-  background-position: center;
+  position: relative;
+
+  background: url("../img/index-background-mobile@1x.jpg") #65a93c;
+  background-position: center 3px;
   background-repeat: no-repeat;
 
   text-align: center;
+  margin-bottom: 200px;
+
+  /*@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }*/
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 167px;
+    left: 19px;
+
+    background-image: url("../img/index-can-mobile.png");
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 270px;
+  }
+}
+
+.program div {
+  max-height: 305px;
+}
+
+.program img {
+  display: block;
+
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 4px;
 }
 
 .program__title {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+
   font-family: $base-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   color: #ffffff;
-  text-transform: uppercase;
   text-align: center;
 
-  width: 245px;
+  width: 100%;
   height: 74px;
 }
 
@@ -28,13 +64,161 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+
+  margin-top: 23px;
 }
 
 .program__button {
+  display: inline-block;
+
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 
-  height: 40px;
-  padding: 10px 69px 10px 69px;
+  min-height: 38px;
+
+  padding: 11px 73px 10px 73px;
+  margin-top: 289px;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    position: relative;
+
+    background-image: none;
+    background-color: #ffffff;
+
+    margin-bottom: 505px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 200px;
+      left: 29px;
+
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      width: 709px;
+      height: 609px;
+    }
+  }
+
+  .program img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .program__image {
+    min-width: 709px;
+    min-height: 609px;
+  }
+
+  .program__title {
+    margin: 0;
+    padding: 0;
+    margin-top: -6px;
+    margin-left: 88px;
+
+    display: block;
+
+    font-family: $base-font;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+
+    width: 65%;
+  }
+
+  .program__slogan {
+    font-family: $base-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #111111;
+    text-transform: uppercase;
+    text-align: left;
+
+    margin-top: 87px;
+    margin-left: 89px;
+  }
+
+  .program__button {
+    margin: 0;
+    padding: 17px 29px 15px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #ffffff;
+
+    display: flex;
+    position: absolute;
+    top: 228px;
+    left: 119px;
+
+    max-width: 246px;
+    min-height: 52px;
+
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    margin: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 560px;
+
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-repeat: no-repeat;
+
+      width: 552px;
+      height: 499px;
+
+      z-index: 0;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -142px;
+      right: 0;
+
+      width: 720px;
+      height: 696px;
+
+      z-index: 0;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
+  }
+
+  .program div {
+    max-height: 100%;
+  }
+
+  .program__title {
+    margin-top: -6px;
+    margin-left: 81px;
+    padding-top: 81px;
+
+    width: 45%;
+  }
+
+  .program__slogan {
+    margin-top: 162px;
+    margin-left: 81px;
+  }
+
+  .program__button {
+    top: 314px;
+    left: 190px;
+  }
 }

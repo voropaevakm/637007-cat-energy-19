@@ -1,3 +1,7 @@
+@import "../sass/normalize.scss";
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
 @import "../sass/blocks/additional-product.scss";
 @import "../sass/blocks/advantages.scss";
 @import "../sass/blocks/checklist.scss";
@@ -16,16 +20,6 @@
 @import "../sass/blocks/program.scss";
 @import "../sass/blocks/select.scss";
 @import "../sass/blocks/slim-pro.scss";
-@import "../sass/variables.scss";
-@import "../sass/mixins.scss";
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
-}
 
 html {
   box-sizing: border-box;
@@ -38,24 +32,45 @@ html {
 }
 
 body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
   background: #ffffff;
 }
 
-.visually-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .container {
-  width: 280px;
-  max-width: 1300px;
+  width: 87.5%;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 92.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 84.7%;
+  }
 }
 
 .button {
@@ -66,9 +81,13 @@ body {
   text-transform: uppercase;
 
   border: none;
+
+  width: 100%;
 }
 
 .button--alter-color {
   background-color: $alter-color;
   border: none;
+
+  width: 100%;
 }
