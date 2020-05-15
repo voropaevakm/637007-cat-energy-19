@@ -259,7 +259,6 @@
   .additional__items-together {
     display: flex;
     flex-direction: column;
-
   }
 
   .additional__item {
@@ -284,7 +283,7 @@
     border-top: 1px solid $border-color;
 
     &--lastone {
-        border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
     }
   }
 

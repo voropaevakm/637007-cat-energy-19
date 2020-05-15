@@ -42,7 +42,7 @@
     padding: 0;
     margin: 0;
 
-    margin-top: 54px;
+    /*margin-top: 54px;*/
     margin-left: 233px;
     max-height: 28px;
     margin-top: -80px;
@@ -70,26 +70,25 @@
     width: 30px;
     height: 16px;
 
-    viewBox: 0 0 30 16;
+    viewbox: 0 0 30 16;
   }
 
   .socials__link--instagram .socials__color {
     width: 23px;
     height: 23px;
 
-    viewBox: 0 0 23 23;
+    viewbox: 0 0 23 23;
   }
 
   .socials__link--facebook .socials__color {
     width: 14px;
     height: 28px;
 
-    viewBox: 0 0 14 28;
+    viewbox: 0 0 14 28;
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .socials__list {
     margin-left: 487px;
   }
