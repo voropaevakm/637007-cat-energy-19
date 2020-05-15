@@ -120,10 +120,6 @@
     padding-bottom: 27px;
   }
 
-  .catalog__wrapper {
-    justify-content: space-between;
-  }
-
   .catalog__item {
     border: none;
     flex-direction: column;
@@ -172,7 +168,6 @@
     height: 30%;
 
     padding: 8px 0 7px 0;
-
   }
 
   .product__line {
@@ -184,6 +179,7 @@
   .catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
 

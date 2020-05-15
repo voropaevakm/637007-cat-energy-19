@@ -140,7 +140,6 @@
 
   .application-form__text {
     margin: 0;
-    padding: 0;
     padding: 50px 333px 59px 41px;
 
     font-size: 20px;
@@ -215,13 +214,13 @@
   }
 
   .application-form__text {
-    padding: 0;
     margin: 0;
     padding: 54px 832px 60px 0px;
   }
 
   .application-form__pet {
     max-width: 586px;
+    padding-bottom: 50px;
   }
 
   .petname__input {
@@ -241,8 +240,5 @@
   .application-form__pet-flex {
     display: flex;
     justify-content: center;
-  }
-  .application-form__pet {
-    padding-bottom: 50px;
   }
 }

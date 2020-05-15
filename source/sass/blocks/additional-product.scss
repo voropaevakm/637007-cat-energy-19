@@ -21,15 +21,11 @@
     content: "";
     position: absolute;
     top: 42px;
-  /*  right: -21px;*/
-  background-color: $base-color;
+    background-color: $base-color;
 
     width: 100vw;
     height: 3px;
     z-index: -2;
-  /*  width: auto;*/
-
-  /*  border: 2px solid $base-color;*/
   }
 }
 
@@ -268,9 +264,7 @@
 
   .additional__item {
     display: flex;
-
     width: 895px;
-
     justify-content: space-between;
   }
 
@@ -296,7 +290,6 @@
 
   .event__text {
     text-align: center;
-
     padding-top: 0;
     margin-bottom: 0;
     margin-top: -22px;

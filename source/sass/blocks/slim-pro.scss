@@ -15,7 +15,6 @@
   margin-left: 23px;
 
   &--catslim {
-
     &::after {
       position: absolute;
       top: 22px;
@@ -31,57 +30,56 @@
       z-index: 0;
     }
 
-      &::before {
-        content: "";
-        position: absolute;
-
-        background-image: url("../img/icon-cat-slim.svg");
-        background-repeat: no-repeat;
-
-        top: 20px;
-        left: 7px;
-
-        width: 35px;
-        height: 49px;
-
-        z-index: 1;
-      }
-    }
-
-  &--catpro {
-
-    &::after {
-      position: absolute;
-      top: 22px;
-      left: -1px;
-
-      width: 50px;
-      height: 50px;
-
+    &::before {
       content: "";
-      background-color: $base-color;
-      border-radius: 50%;
+      position: absolute;
 
-      z-index: 0;
-    }
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
 
-      &::before {
-        content: "";
-        position: absolute;
+      top: 20px;
+      left: 7px;
 
-        background-image: url("../img/icon-cat-pro.svg");
-        background-repeat: no-repeat;
+      width: 35px;
+      height: 49px;
 
-        left: -10px;
-        top: 33px;
-
-        width: 67px;
-        height: 28px;
-
-        z-index: 1;
-      }
+      z-index: 1;
     }
   }
+
+  &--catpro {
+    &::after {
+      position: absolute;
+      top: 22px;
+      left: -1px;
+
+      width: 50px;
+      height: 50px;
+
+      content: "";
+      background-color: $base-color;
+      border-radius: 50%;
+
+      z-index: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+
+      left: -10px;
+      top: 33px;
+
+      width: 67px;
+      height: 28px;
+
+      z-index: 1;
+    }
+  }
+}
 
 .weight__title {
   margin: 0;
@@ -197,23 +195,23 @@
   }
 
   .weight__elipse--catpro {
-      order: 2;
+    order: 2;
 
-      &::after {
-        left: 425px;
-        top: 91px;
+    &::after {
+      left: 425px;
+      top: 91px;
 
-        width: 200px;
-        height: 200px;
-      }
+      width: 200px;
+      height: 200px;
+    }
 
-      &::before {
-        width: 268px;
-        height: 113px;
+    &::before {
+      width: 268px;
+      height: 113px;
 
-        top: 135px;
-        left: 389px;
-      }
+      top: 135px;
+      left: 389px;
+    }
   }
 
   .weight__title {
@@ -286,7 +284,6 @@
   }
 
   .weight__elipse--catslim {
-
     &::after {
       left: 29px;
       top: -29px;
@@ -305,22 +302,21 @@
   }
 
   .weight__elipse--catpro {
+    &::after {
+      left: 29px;
+      top: -29px;
 
-      &::after {
-        left: 29px;
-        top: -29px;
+      width: 100px;
+      height: 100px;
+    }
 
-        width: 100px;
-        height: 100px;
-      }
+    &::before {
+      width: 134px;
+      height: 57px;
 
-      &::before {
-        width: 134px;
-        height: 57px;
-
-        top: -7px;
-        left: 12px;
-      }
+      top: -7px;
+      left: 12px;
+    }
   }
 
   .weight__text {
