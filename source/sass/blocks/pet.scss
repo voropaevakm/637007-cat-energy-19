@@ -55,12 +55,25 @@
   min-width: 229px;
   height: 45px;
 
-  border: solid 1px $border-color;
+  border: solid 1px #ebebeb;
 
   margin-left: 14px;
 
+  &:hover {
+    border: solid 1px $border-color;
+  }
+
+  &:active {
+    border: solid 1px #444444;
+  }
+
+  &:invalid {
+    border: solid 1px #ff8282;
+   }
+
   &::placeholder {
     padding-left: 15px;
+    color: #444444;
   }
 }
 
@@ -76,12 +89,25 @@
   min-width: 204px;
   height: 45px;
 
-  border: solid 1px $border-color;
+  border: solid 1px #ebebeb;
 
   margin-left: 16px;
 
+  &:hover {
+    border: solid 1px $border-color;
+  }
+
+  &:active {
+    border: solid 1px #444444;
+  }
+
+  &:invalid {
+    border: solid 1px #ff8282;
+   }
+
   &::placeholder {
     padding-left: 15px;
+    color: #444444;
   }
 }
 
@@ -97,12 +123,25 @@
   min-width: 172px;
   height: 45px;
 
-  border: solid 1px $border-color;
+  border: solid 1px #ebebeb;
 
   margin-left: 14px;
 
+  &:hover {
+    border: solid 1px $border-color;
+  }
+
+  &:active {
+    border: solid 1px #444444;
+  }
+
+  &:invalid {
+    border: solid 1px #ff8282;
+   }
+
   &::placeholder {
     padding-left: 15px;
+    color: #444444;
   }
 }
 
@@ -200,6 +239,7 @@
 
     &::placeholder {
       padding-left: 16px;
+
     }
   }
 
@@ -215,7 +255,7 @@
 
   .application-form__text {
     margin: 0;
-    padding: 54px 832px 60px; /*0px*/
+    padding: 54px 832px 60px 0;
   }
 
   .application-form__pet {

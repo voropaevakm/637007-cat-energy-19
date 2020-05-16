@@ -21,6 +21,10 @@
   color: #444444;
   text-align: left;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__color {

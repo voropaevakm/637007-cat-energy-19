@@ -20,6 +20,9 @@
       <symbol viewBox="0 0 10 19" id="icon-facebook">
         <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18 h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18z"/>
       </symbol>
+      <symbol viewBox="0 0 60 60" id="icon-hat">
+        <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+      </symbol>
     </svg>
 
     <header class="page-header">
@@ -126,17 +129,28 @@
             </div>
           </div>
           <div class="wrapper__flex-two">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-              <img class="live-example__image" src="img/before-mobile@1x.png" alt="Изображения питомца до и после применения программы питания">
-            </picture>
-            <div class="live-example__range pet-range">
-              <label>
-                <span class="pet-range__min">Было</span>
-                <input type="range" name="cat-range">
-                <span class="pet-range__max">Стало</span>
-              </label>
+            <div class="live-example__slider slider">
+              <input class="visually-hidden slider__before" type="radio" id="before" name="change" checked>
+              <input class="visually-hidden slider__after" type="radio" id="after" name="change">
+              <div class="slider__images">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображения питомца до применения программы питания">
+                </picture>
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Изображения питомца после применения программы питания">
+                </picture>
+              </div>
+              <div class="slider__wrapper">
+                <label class="slider__control" for="before">Было</label>
+                <div class="slider__scale">
+                  <div class="slider__bar"></div>
+                </div>
+                <label class="slider__control" for="after">Стало</label>
+              </div>
             </div>
           </div>
         </div>
@@ -155,9 +169,9 @@
         </div>
         <a class="contacts__map" href="#">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img class="contacts__map-image" src="img/bg-map-mobile.png" alt="Карта расположения офиса «Кэт энерджи» по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map-image" src="img/bg-map-mobile.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта расположения офиса «Кэт энерджи» по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
           </picture>
         </a>
       </div>
@@ -187,9 +201,7 @@
       <div class="page-footer__copyright copyright container">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-          </svg>
+          <svg class="copyright__color" width="27" height="34"><use xlink:href="#icon-hat"></use></svg>
         </a>
       </div>
     </footer>

@@ -19,6 +19,7 @@
 @import "../sass/blocks/product.scss";
 @import "../sass/blocks/program.scss";
 @import "../sass/blocks/select.scss";
+@import "../sass/blocks/slider.scss";
 @import "../sass/blocks/slim-pro.scss";
 
 html {
@@ -33,6 +34,7 @@ html {
 
 body {
   min-width: 320px;
+  max-width: 1440px;
   margin: 0;
   padding: 0;
 
@@ -83,6 +85,14 @@ img {
   border: none;
 
   width: 100%;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--alter-color {
@@ -90,4 +100,12 @@ img {
   border: none;
 
   width: 100%;
+
+  &:hover {
+    background-color: $alter-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

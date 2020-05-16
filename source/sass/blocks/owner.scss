@@ -57,10 +57,23 @@
   width: 219px;
   height: 45px;
 
-  border: solid 1px $border-color;
+  border: solid 1px #ebebeb;
+
+  &:hover {
+    border: solid 1px $border-color;
+  }
+
+  &:active {
+    border: solid 1px #444444;
+  }
+
+  &:invalid {
+    border: solid 1px #ff8282;
+   }
 
   &::placeholder {
     padding-left: 15px;
+    color: #444444;
   }
 }
 
@@ -75,6 +88,14 @@
 
   width: 18px;
   height: 14px;
+
+  &:active {
+    fill: #68b738;
+  }
+
+  &:invalid {
+    fill: #ff8282;
+  }
 }
 
 .ownertel__input {
@@ -89,12 +110,25 @@
   width: 204px;
   height: 45px;
 
-  border: solid 1px $border-color;
+  border: solid 1px #ebebeb;
 
   margin-left: 5px;
 
+  &:hover {
+    border: solid 1px $border-color;
+  }
+
+  &:active {
+    border: solid 1px #444444;
+  }
+
+  &:invalid {
+    border: solid 1px #ff8282;
+   }
+
   &::placeholder {
     padding-left: 15px;
+    color: #444444;
   }
 }
 
@@ -105,6 +139,14 @@
 
   width: 21px;
   height: 21px;
+
+  &:active {
+    fill: #68b738;
+  }
+
+  &:invalid {
+    fill: #ff8282;
+  }
 }
 
 .owner__owneremail {

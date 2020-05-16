@@ -63,6 +63,10 @@
   text-transform: uppercase;
   color: #222222;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     display: inline-block;
@@ -75,6 +79,14 @@
     left: -46px;
 
     border: 1px solid $border-color;
+
+    &:hover {
+      border: 1px solid #bababa;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &::after {
@@ -92,6 +104,10 @@
     position: absolute;
     top: 2px;
     left: -41px;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

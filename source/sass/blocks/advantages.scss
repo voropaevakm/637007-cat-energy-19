@@ -40,6 +40,10 @@
   height: 29px;
 
   margin-top: 28px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
 }
 
 .advantages__item--powder {
@@ -49,6 +53,10 @@
 
   width: 29px;
   height: 31px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
 }
 
 .advantages__item--dining {
@@ -58,6 +66,10 @@
 
   width: 23px;
   height: 30px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
 }
 
 .advantages__item--clock {
@@ -69,6 +81,10 @@
   height: 31px;
 
   margin-top: -2px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
 }
 
 .advantages__text {
