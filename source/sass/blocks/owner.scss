@@ -1,5 +1,9 @@
 @import "../sass/variables.scss";
 
+.owner {
+  position: relative;
+}
+
 .owner__legend {
   position: relative;
   display: block;
@@ -57,28 +61,34 @@
   width: 219px;
   height: 45px;
 
-  border: solid 1px #ebebeb;
-
-  &:hover {
-    border: solid 1px $border-color;
-  }
-
-  &:active {
-    border: solid 1px #444444;
-  }
-
-  &:invalid {
-    border: solid 1px #ff8282;
-   }
+  border: 1px solid #ebebeb;
 
   &::placeholder {
     padding-left: 15px;
     color: #444444;
   }
-}
 
-.owner {
-  position: relative;
+  &:hover {
+    border: 1px solid $border-color;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid #444444;
+    outline: none;
+
+    & ~ .owneremail__mail {
+      fill: $base-color;
+    }
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+
+    & ~ .owneremail__mail {
+      fill: #ff8282;
+    }
+  }
 }
 
 .owneremail__mail {
@@ -88,14 +98,6 @@
 
   width: 18px;
   height: 14px;
-
-  &:active {
-    fill: #68b738;
-  }
-
-  &:invalid {
-    fill: #ff8282;
-  }
 }
 
 .ownertel__input {
@@ -110,25 +112,35 @@
   width: 204px;
   height: 45px;
 
-  border: solid 1px #ebebeb;
+  border: 1px solid #ebebeb;
 
-  margin-left: 5px;
-
-  &:hover {
-    border: solid 1px $border-color;
-  }
-
-  &:active {
-    border: solid 1px #444444;
-  }
-
-  &:invalid {
-    border: solid 1px #ff8282;
-   }
+  margin-left: 15px;
 
   &::placeholder {
     padding-left: 15px;
     color: #444444;
+  }
+
+  &:hover {
+    border: 1px solid $border-color;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid #444444;
+    outline: none;
+
+    & ~ .ownertel__phone {
+      fill: $base-color;
+    }
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+
+    & ~ .ownertel__phone {
+      fill: #ff8282;
+    }
   }
 }
 
@@ -139,14 +151,6 @@
 
   width: 21px;
   height: 21px;
-
-  &:active {
-    fill: #68b738;
-  }
-
-  &:invalid {
-    fill: #ff8282;
-  }
 }
 
 .owner__owneremail {
@@ -235,7 +239,7 @@
     width: 535px;
     height: 52px;
 
-    margin-left: 9px;
+    margin-left: 35px;
 
     &::placeholder {
       font-size: 20px;
