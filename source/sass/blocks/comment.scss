@@ -14,13 +14,13 @@
 
   width: 143px;
 
-  padding-top: 18px;
+  padding-top: 4px;
   margin-left: -1px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 31px;
+    top: 18px;
 
     width: 100vw;
     height: 3px;
@@ -55,7 +55,7 @@
     font-size: 36px;
     line-height: 36px;
 
-    padding-top: 54px;
+    padding-top: 41px;
     padding-left: 38px;
     margin-left: -10px;
 
@@ -63,7 +63,7 @@
 
     &::before {
       content: "";
-      top: 77px;
+      top: 63px;
 
       width: 100vw;
     }
@@ -71,7 +71,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 77px;
+      top: 63px;
       right: 100%;
 
       background-color: $base-color;

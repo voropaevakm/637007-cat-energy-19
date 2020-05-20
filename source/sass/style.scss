@@ -22,21 +22,16 @@
 @import "../sass/blocks/slider.scss";
 @import "../sass/blocks/slim-pro.scss";
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
-  min-width: 320px;
-  max-width: 1440px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 
   background: #ffffff;
 }
@@ -63,15 +58,18 @@ img {
 }
 
 .container {
-  width: 87.5%;
+  max-width: 1300px;
+  width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 92.5%;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 84.7%;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

@@ -87,7 +87,6 @@
   .slider__images {
     margin: 0 auto;
     margin-top: 62px;
-    margin-left: 46px;
 
     width: 690px;
     min-height: 517px;
@@ -97,6 +96,8 @@
     width: 690px;
     height: auto;
     top: 0;
+
+    margin: 0 -6px 0 6px;
 
     opacity: 1;
 
@@ -171,14 +172,14 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    background-image: linear-gradient(to right, $alter-color 55%, #eaeaea 45%);
+    background-image: linear-gradient(to right, $alter-color 57%, #eaeaea 43%);
     background-position: 0 1px;
     min-height: 462px;
   }
 
   .slider__images {
     margin-top: -190px;
-    margin-left: 125px;
+    margin-left: 150px;
   }
 
   .slider__image {
@@ -199,7 +200,7 @@
 
   .slider__wrapper {
     padding-top: 42px;
-    margin-left: 87px;
+    margin-left: 120px;
   }
 
   .slider__scale {

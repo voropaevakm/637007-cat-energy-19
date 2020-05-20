@@ -1,9 +1,5 @@
 @import "../sass/variables.scss";
 
-.owner {
-  position: relative;
-}
-
 .owner__legend {
   position: relative;
   display: block;
@@ -93,8 +89,8 @@
 
 .owneremail__mail {
   position: absolute;
-  top: 126px;
-  right: 29px;
+  top: 16px;
+  right: 17px;
 
   width: 18px;
   height: 14px;
@@ -146,14 +142,15 @@
 
 .ownertel__phone {
   position: absolute;
-  top: 182px;
-  right: 25px;
+  top: 13px;
+  right: 13px;
 
   width: 21px;
   height: 21px;
 }
 
 .owner__owneremail {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -162,6 +159,7 @@
 }
 
 .owner__ownertel {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -206,7 +204,7 @@
     font-size: 20px;
     line-height: 20px;
 
-    padding-left: 29px;
+    padding-left: 28px;
 
     width: 92px;
   }
@@ -227,19 +225,19 @@
 
   .owneremail__mail {
     position: absolute;
-    top: 206px;
-    right: 56px;
+    top: 20px;
+    right: 44px;
   }
 
   .owner__owneremail {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .ownertel__input {
     width: 535px;
     height: 52px;
 
-    margin-left: 35px;
+    margin-left: 32px;
 
     &::placeholder {
       font-size: 20px;
@@ -251,8 +249,8 @@
 
   .ownertel__phone {
     position: absolute;
-    top: 275px;
-    right: 53px;
+    top: 17px;
+    right: 40px;
   }
 }
 
@@ -262,7 +260,7 @@
 
     padding: 0;
     padding-left: 37px;
-    margin-left: -50px;
+    margin-left: -39px;
 
     width: 591px;
 
@@ -290,7 +288,6 @@
 
   .owner__label {
     padding: 0;
-    margin-left: -11px;
   }
 
   .owneremail__input {
@@ -299,19 +296,18 @@
   }
 
   .owneremail__mail {
-    top: 131px;
-    right: 669px;
+    top: 20px;
+    right: 20px;
   }
 
   .ownertel__input {
     width: 470px;
 
-    margin-left: 8px;
-    margin-right: -10px;
+    margin-left: 9px;
   }
 
   .ownertel__phone {
-    top: 128px;
+    top: 17px;
     right: 18px;
   }
 

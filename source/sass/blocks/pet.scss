@@ -8,7 +8,9 @@
   text-align: left;
   color: #111111;
 
+  margin: 0;
   padding-top: 16px;
+  padding-left: 20px;
 }
 
 .application-form__text {
@@ -20,9 +22,7 @@
   text-transform: uppercase;
   color: #111111;
 
-  padding-top: 25px;
-  padding-right: 50px;
-  padding-bottom: 33px;
+  padding: 11px 70px 19px 20px;
 }
 
 .application-form__pet,
@@ -31,11 +31,11 @@
 .application-form__comment,
 .application-form__additional-check {
   border: none;
+}
 
-  &:focus,
-  &:active {
-    border: 1px solid #444444;
-  }
+.application-form__pet,
+.application-form__select {
+  padding-left: 17px;
 }
 
 .pet__label {
@@ -180,11 +180,12 @@
 
     padding: 0;
     margin: 0;
+    padding-left: 29px;
   }
 
   .application-form__text {
     margin: 0;
-    padding: 50px 333px 59px 41px;
+    padding: 55px 333px 59px 70px;
 
     font-size: 20px;
     line-height: 30px;
@@ -249,22 +250,25 @@
 
   .application-form__pet {
     padding-bottom: 52px;
+    padding-left: 39px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .application-form__title {
-    padding-top: 42px;
+    padding-top: 49px;
+    padding-left: 110px;
   }
 
   .application-form__text {
     margin: 0;
-    padding: 54px 832px 60px 0;
+    padding-left: 110px;
+
+    width: 800px;
   }
 
   .application-form__pet {
-    max-width: 586px;
-    padding-bottom: 50px;
+    padding: 4px 77px 50px 79px;
   }
 
   .petname__input {
@@ -283,6 +287,5 @@
 
   .application-form__pet-flex {
     display: flex;
-    justify-content: center;
   }
 }

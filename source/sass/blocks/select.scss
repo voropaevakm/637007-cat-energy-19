@@ -9,17 +9,17 @@
 
 .prog__loss {
   margin-top: 21px;
-  padding-left: 34px;
+  padding-left: 46px;
   padding-bottom: 22px;
 }
 
 .prog__gain {
-  padding-left: 34px;
+  padding-left: 46px;
   padding-bottom: 22px;
 }
 
 .prog__unknown {
-  padding-left: 34px;
+  padding-left: 46px;
   padding-bottom: 15px;
 }
 
@@ -113,7 +113,7 @@
     width: 630px;
     height: 196px;
 
-    margin-left: 71px;
+    margin: 0 auto;
   }
 
   .prog__label {
@@ -146,18 +146,18 @@
   }
 
   .prog__loss {
-    margin-top: 28px;
-    padding-left: 38px;
+    margin-top: 29px;
+    padding-left: 58px;
     padding-bottom: 31px;
   }
 
   .prog__gain {
-    padding-left: 38px;
+    padding-left: 58px;
     padding-bottom: 29px;
   }
 
   .prog__unknown {
-    padding-left: 37px;
+    padding-left: 58px;
   }
 }
 
@@ -165,18 +165,18 @@
   .application-form__select {
     margin: 0;
     padding: 0;
-    margin-right: 110px;
+    /*margin-right: 110px;*/
     margin-top: 4px;
     width: 570px;
   }
 
   .prog__loss {
     margin-top: 35px;
-    padding-left: 30px;
+    padding-left: 72px;
   }
 
   .prog__gain,
   .prog__unknown {
-    padding-left: 30px;
+    padding-left: 72px;
   }
 }

@@ -258,9 +258,9 @@
 
   .live-example__text {
     padding: 0;
-    padding-left: 65px;
-    padding-top: 73px;
-    max-width: 595px;
+    padding-left: 111px;
+    padding-top: 56px;
+    max-width: 545px;
   }
 
   .live-example__weight {
@@ -269,20 +269,28 @@
   }
 
   .live-example__kilograms {
+    margin-top: 11px;
+    margin-left: 47px;
+    padding: 16px 56px 18px 57px;
+
     &::before {
       background-color: $alter-color;
 
-      top: 130px;
-      left: 96px;
+      top: 115px;
+      left: 130px;
+      width: 120px;
     }
   }
 
   .live-example__days {
+    margin-top: 12px;
+
     &::before {
       background-color: $alter-color;
 
-      top: 130px;
-      left: 286px;
+      top: 115px;
+      left: 325px;
+      width: 140px;
     }
   }
 

@@ -233,9 +233,10 @@
     background-size: cover;
 
     width: 708px;
+    height: 200px;
 
     margin-top: 70px;
-    margin-bottom: -15px;
+    margin-bottom: 75px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -256,7 +257,7 @@
 
 @media (min-width: $desktop-width) {
   .additional__title {
-    margin-left: -2px;
+    margin-left: -39px;
     margin-top: 50px;
   }
 
@@ -279,6 +280,9 @@
     flex-direction: column;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    width: 245px;
+    height: 289px;
 
     margin-top: 0;
     margin-left: 80px;

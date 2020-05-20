@@ -61,11 +61,13 @@
 
 @media (min-width: $desktop-width) {
   .copyright__link {
-    margin-top: 13px;
+    margin-top: 14px;
+    margin-right: 16px;
   }
 
   .copyright__color {
     margin-top: 3px;
     margin-bottom: 50px;
+    margin-right: -6px;
   }
 }

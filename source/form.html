@@ -64,11 +64,11 @@
       <h1 class="visually-hidden">Форма выбора программы интернет-магазина «Кэт энерджи»</h1>
 
       <section class="application-form">
-        <h2 class="application-form__title container">Подбор программы</h2>
-        <p class="application-form__text container">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <h2 class="application-form__title">Подбор программы</h2>
+        <p class="application-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="post">
       <div class="application-form__pet-flex">
-          <fieldset class="application-form__pet pet container">
+          <fieldset class="application-form__pet pet">
             <div class="pet__petname petname">
               <label class="pet__label" for="cat-name">Имя:*</label>
               <input class="petname__input" id="cat-name" type="text" name="name" placeholder="Барсик">
@@ -83,7 +83,7 @@
             </div>
           </fieldset>
           <fieldset class="application-form__select select">
-            <ul class="select__prog prog container">
+            <ul class="select__prog prog">
               <li class="prog__loss">
                 <input class="prog_input visually-hidden" type="radio" name="weight-check" value="loss" id="fat" checked>
                 <label class="prog__label" for="fat">Похудение</label>
@@ -151,7 +151,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__contacts page-footer__contacts--color contacts">
-        <div class="contacts__area container">
+        <div class="contacts__area">
           <p class="contacts__text">Приглашаем к&nbspсотрудничеству дилеров!</p>
           <div class="contacts__address address">
             <p class="address__line-one">ул. Большая Конюшенная, д. 19/8</p>
@@ -159,11 +159,12 @@
           </div>
         </div>
         <a class="contacts__map" href="#">
-          <picture>
+          <!--<picture>
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="contacts__map-image" src="img/bg-map-mobile.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта расположения офиса «Кэт энерджи» по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-          </picture>
+          </picture>-->
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3eded9258eedc1173085d9fb1df358288734cbaa2ff267ebdc3f9be9bad815ae&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
         </a>
       </div>
       <a class="page-footer__logo" href="index.html">
@@ -198,6 +199,7 @@
     </footer>
 
     <script src="js/main-navigation.js"></script>
+    <script src="js/picturefill.js" async></script>
 
   </body>
 </html>
